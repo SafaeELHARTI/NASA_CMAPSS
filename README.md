@@ -27,13 +27,13 @@
 ## 📸 Screenshots
 
 ### Page 1 — Vue d'ensemble
-![Fleet Overview](screenshots/page1_fleet_overview.png)
+![Fleet Overview](screenshots/fleet_overview.png)
 
 ### Page 2 — Détail moteur
-![Engine Detail](screenshots/page2_engine_detail.png)
+![Engine Detail](screenshots/engine_detail.png)
 
 ### Page 3 — Alertes
-![Alerts](screenshots/page3_alerts.png)
+![Alerts](screenshots/alerts.png)
 
 ## ▶️ Comment reproduire ce projet
 
