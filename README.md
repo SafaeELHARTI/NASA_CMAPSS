@@ -56,4 +56,4 @@ git clone https://github.com/SafaeELHARTI/NASA_CMAPSS.git
 ## 👤 Auteur
 
 **Safae EL HARTI**  
-[LinkedIn](https://linkedin.com/in/safa-el-khaoui) · [GitHub](https://github.com/SafaeELHARTI)
+[LinkedIn](https://linkedin.com/in/safae-el-khaoui) · [GitHub](https://github.com/SafaeELHARTI)
