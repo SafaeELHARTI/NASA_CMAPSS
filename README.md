@@ -1,11 +1,10 @@
-﻿# ✈️ Fleet Engine Monitoring Dashboard
-
+# ✈️ Fleet Engine Monitoring Dashboard
 > Mini-projet Data Engineer — Monitoring de fiabilité de moteurs d'avion
 
 ## 📌 Contexte
 
 Simulation du rôle d'un data engineer chez un opérateur aérien.
-Objectif : monitorer la fiabilité de la flotte de moteurs via un 
+Objectif : monitorer la fiabilité de la flotte de moteurs via un
 dashboard Power BI basé sur des données réelles NASA.
 
 ## 🎯 Objectif
@@ -18,10 +17,12 @@ Construire un pipeline de données complet :
 ## 📊 Dataset
 
 - **Source** : NASA CMAPSS N-CMAPSS_DS01
-- **Données** : 6 moteurs, 21 capteurs physiques, cycles complets
-  jusqu'à la panne
-- **Lien** : [Kaggle - NASA CMAPSS](https://www.kaggle.com/datasets/
-  bishals098/nasa-cmapss-2-engine-degradation)
+- **Données** : 6 moteurs, 14 capteurs physiques, cycles complets jusqu'à la panne
+- **Lien** : [Kaggle - NASA CMAPSS](https://www.kaggle.com/datasets/bishals098/nasa-cmapss-2-engine-degradation)
+
+> ⚠️ Les fichiers `.pbix` et `.csv` ne sont pas inclus dans ce repo car ils dépassent
+> la limite GitHub (100 MB). Pour les générer, exécute le notebook `data_preparation.ipynb`
+> depuis Kaggle Notebooks — aucun téléchargement local requis.
 
 ## 🛠️ Stack technique
 
@@ -33,74 +34,3 @@ Construire un pipeline de données complet :
 | GitHub | Versioning et partage du projet |
 
 ## 📁 Structure du projet
-
-fleet-dashboard/
-├── data/
-│   └── engine_monitoring.csv     # Données transformées
-├── notebook/
-│   └── data_preparation.ipynb    # Script Python complet
-├── dashboard/
-│   └── fleet_dashboard.pbix      # Fichier Power BI
-├── screenshots/
-│   ├── page1_fleet_overview.png
-│   ├── page2_engine_detail.png
-│   └── page3_alerts.png
-└── README.md
-
-## 🔄 Pipeline de données
-
-NASA .h5 raw data → Python (h5py + pandas) → CSV → Power BI
-
-## 📈 Dashboard — 3 pages
-
-### Page 1 — Vue d'ensemble de la flotte
-- Nombre total de moteurs actifs
-- Moyenne du RUL de la flotte
-- Distribution des cycles par moteur
-- Matrice d'alertes RUL avec mise en forme conditionnelle
-
-### Page 2 — Détail moteur
-- Évolution des capteurs T30, T50, Nf au fil des cycles
-- Filtre interactif par numéro de moteur
-- Détection visuelle de la dégradation
-
-### Page 3 — Alertes critiques
-- Table des moteurs en zone critique (RUL < 20)
-- Code couleur : Rouge (CRITICAL) / Orange (WARNING)
-
-## 🚨 Niveaux d'alerte RUL
-
-| Niveau | RUL | Couleur |
-|--------|-----|---------|
-| OK | > 30 | 🟢 Vert |
-| WATCH | 20–30 | 🟡 Jaune |
-| WARNING | 10–20 | 🟠 Orange |
-| CRITICAL | < 10 | 🔴 Rouge |
-
-## 📸 Screenshots
-
-### Page 1 — Vue d'ensemble
-![Fleet Overview](screenshots/fleet_overview.png)
-
-### Page 2 — Détail moteur
-![Engine Detail](screenshots/engine_detail.png)
-
-### Page 3 — Alertes
-![Alerts](screenshots/alerts.png)
-
-## ▶️ Comment reproduire ce projet
-
-1. **Cloner le repo**
-   git clone https://github.com/TON_USERNAME/fleet-engine-dashboard
-
-2. **Données** : Télécharger le dataset NASA CMAPSS sur Kaggle
-   et exécuter le notebook `data_preparation.ipynb`
-
-3. **Dashboard** : Ouvrir `fleet_dashboard.pbix` dans Power BI Desktop
-   et pointer vers le fichier `engine_monitoring.csv` local
-
-## 👤 Safae EL HARTI
-
-**Ton Nom**  
-[LinkedIn](https://linkedin.com/in/safa-el-khaoui) · 
-[GitHub](https://github.com/SafaeELHARTI)
